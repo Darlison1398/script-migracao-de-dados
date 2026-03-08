@@ -1,0 +1,19 @@
+{
+  "name": "migration-project",
+  "version": "1.0.0",
+  "description": "Script responsável por migrar registros de sites do banco legado para o novo banco de dados.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node src/migrate.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.20.0"
+  }
+}
