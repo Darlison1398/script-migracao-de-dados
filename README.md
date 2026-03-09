@@ -3,7 +3,7 @@
 ## Descrição
 Script criado para migrar registros de sites do banco legado para o novo banco de dados.
 
-## Cenáirio 1:
+## Cenário 1:
 A primeira versão do script realizava a migração de forma sequencial, processando um registro por vez. Isso cria um gargalo, pois cada operação precisa esperar a anterior terminar.
  -- veja o video do teste:
  https://drive.google.com/file/d/1CJxbQyiUaOaVtQYkFhPWwZXPUEeEDple/view?usp=sharing
