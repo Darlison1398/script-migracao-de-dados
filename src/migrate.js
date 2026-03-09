@@ -1,5 +1,5 @@
 const { migrateSites } = require("./services/migrationService");
-//const { migrateSitesnovos }= require ("./services/migrationService");
+//const { migrateSitesnovos }= require ("./services/migrationAntigaService");
 
 async function main() {
   try {
