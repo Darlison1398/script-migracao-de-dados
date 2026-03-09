@@ -38,7 +38,7 @@ docker run migration-script
 docker compose up --build
 
 - entrar no container do banco legayDb e execultar esse comando para criar a tabela:
-### docker exec -it migration-project-new-db-1 psql -U postgres -d postgres
+### docker exec -it migration-project-legacy-db-1 psql -U postgres -d postgres
 
 CREATE TABLE sites (
     id SERIAL PRIMARY KEY,
@@ -54,7 +54,7 @@ SELECT
 FROM generate_series(1,5000);
 
 - entrar no container do banco newDb1 e executar esse comando para criar a tabela de sites:
-### docker exec -it migration-project-legacy-db-1 psql -U postgres -d postgres
+### docker exec -it migration-project-new-db-1 psql -U postgres -d postgres
 CREATE TABLE sites (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
@@ -68,4 +68,4 @@ CREATE TABLE sites (
 ### docker compose up
 
 -- tem o comando para "Matar" os containers
-### docker compose dow
+### docker compose down
